@@ -13,7 +13,7 @@
     "type-check": "vue-tsc --noEmit --composite false"
   },
   "dependencies": {
-    "@nuxt/ui": "^3.1.0",
+    "@nuxt/ui-pro": "^3.1.0",
     "@openid/ui": "workspace:*",
     "@unhead/vue": "^2.0.8",
     "@vueuse/core": "^13.1.0",

@@ -1,0 +1,40 @@
+diff --git a/dist/shared/ui-pro.CjN6508I.mjs b/dist/shared/ui-pro.CjN6508I.mjs
+index a74ca12592a31671a9d29ffcb45e722ce425cc8e..4bd2998294916c8ac967542c499591e4e15a5771 100644
+--- a/dist/shared/ui-pro.CjN6508I.mjs
++++ b/dist/shared/ui-pro.CjN6508I.mjs
+@@ -2285,34 +2285,7 @@ const icons = {
+   warning: "i-lucide-triangle-alert"
+ };
+ 
+-async function validateLicense(opts) {
+-  if (!opts.key) {
+-    throw _createError(`Missing \`${opts.theme.env}\` license key.
+-Purchase Nuxt UI Pro at \`${opts.theme.link}\` to build your app in production.`);
+-  }
+-  const gitInfo = opts.key !== "oss" ? void 0 : await _getLocalGitInfo(opts.dir) || _getGitEnv();
+-  const projectName = gitInfo ? `${gitInfo.owner || ""}/${gitInfo.name || ""}` : await _getPkgName(opts.dir);
+-  try {
+-    await ofetch("https://api.nuxtlabs.com/ui-pro/verify", {
+-      headers: {
+-        "Authorization": `key ${opts.key}`,
+-        "x-nuxt-project": projectName
+-      },
+-      params: gitInfo ? {
+-        gitRepo: gitInfo.name,
+-        gitOrg: gitInfo.owner,
+-        gitUrl: gitInfo.url
+-      } : {}
+-    });
+-  } catch (error) {
+-    const statusType = Math.round(error.status / 100);
+-    if (statusType === 4) {
+-      throw _createError(`Invalid \`${opts.theme.env}\` license key.
+-Purchase Nuxt UI Pro at \`${opts.theme.link}\` to build your app in production.`);
+-    }
+-    throw _createError("Cannot validate Nuxt UI Pro License: " + error);
+-  }
+-}
++async function validateLicense(opts) {}
+ function _createError(message) {
+   const error = new Error(message);
+   try {

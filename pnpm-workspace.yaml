@@ -12,5 +12,6 @@ allowedDeprecatedVersions:
   rimraf: '3.0.2'
 
 onlyBuiltDependencies:
+  - simple-git-hooks
   - esbuild
   - vue-demi

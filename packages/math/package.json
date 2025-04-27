@@ -1,5 +1,5 @@
 {
-  "name": "@template-turborepo-vue/math",
+  "name": "@openid/math",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -17,8 +17,8 @@
     "build-only": "tsup"
   },
   "devDependencies": {
-    "@template-turborepo-vue/eslint-config": "workspace:*",
-    "@template-turborepo-vue/tsconfig": "workspace:*",
+    "@openid/eslint-config": "workspace:*",
+    "@openid/tsconfig": "workspace:*",
     "@types/node": "~22.14.1",
     "esbuild-fix-imports-plugin": "^1.0.19",
     "eslint": "^9.25.1",

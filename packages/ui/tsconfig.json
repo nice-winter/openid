@@ -1,5 +1,5 @@
 {
-  "extends": "@template-turborepo-vue/tsconfig/vue.json",
+  "extends": "@openid/tsconfig/vue.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }

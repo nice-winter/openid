@@ -1,4 +1,4 @@
-import { eslintConfigVue } from '@template-turborepo-vue/eslint-config/vue'
+import { eslintConfigVue } from '@openid/eslint-config/vue'
 
 export default eslintConfigVue(
   // Add your custom rules here:

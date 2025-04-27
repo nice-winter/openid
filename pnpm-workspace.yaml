@@ -2,6 +2,8 @@ packages:
   - apps/*
   - packages/*
 
+shamefullyHoist: true
+
 patchedDependencies:
   plop@4.0.1: patches/plop@4.0.1.patch
   '@nuxt/ui-pro': patches/@nuxt__ui-pro.patch

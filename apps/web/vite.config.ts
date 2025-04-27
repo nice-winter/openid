@@ -6,7 +6,7 @@ import { VueRouterAutoImports } from 'unplugin-vue-router'
 import { unheadVueComposablesImports } from '@unhead/vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
-import ui from '@nuxt/ui/vite'
+import ui from '@nuxt/ui-pro/vite'
 
 // https://vite.dev/config/
 export default defineConfig({

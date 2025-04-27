@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "vercel.turbo-vsc",
+    "EditorConfig.EditorConfig",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "Vue.volar",
+    "bradlc.vscode-tailwindcss"
+  ]
+}

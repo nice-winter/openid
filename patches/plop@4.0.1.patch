@@ -1,0 +1,29 @@
+diff --git a/src/plop.d.ts b/src/plop.d.ts
+index 0e31399ca75feda917d6765c07f286adc2c86004..21ee0f6984388452779543ddde6029b3b12698a9 100644
+--- a/src/plop.d.ts
++++ b/src/plop.d.ts
+@@ -1,4 +1,5 @@
+-import * as Liftoff from "liftoff";
++import * as Liftoff from 'liftoff'
++import { Ora } from 'ora'
+ 
+ export {
+   ActionConfig,
+@@ -11,12 +12,9 @@ export {
+   PlopCfg,
+   PlopGenerator,
+   NodePlopAPI,
+-  PlopGeneratorConfig,
+-} from "node-plop";
++  PlopGeneratorConfig
++} from 'node-plop'
+ 
+-export const Plop: Liftoff;
+-export const run: (
+-  env: Liftoff.LiftoffEnv,
+-  _: any,
+-  passArgsBeforeDashes: boolean,
+-) => Promise<void>;
++export const progressSpinner: Ora
++export const Plop: Liftoff
++export const run: (env: Liftoff.LiftoffEnv, _: any, passArgsBeforeDashes: boolean) => Promise<void>

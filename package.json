@@ -1,0 +1,43 @@
+{
+  "name": "template-turborepo-vue",
+  "version": "1.2.1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  },
+  "packageManager": "pnpm@10.9.0+sha512.0486e394640d3c1fb3c9d43d49cf92879ff74f8516959c235308f5a8f62e2e19528a65cdc2a3058f587cde71eba3d5b56327c8c33a97e4c4051ca48a10ca2d5f",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "node -e \"try{require('./scripts/postinstall.js')}catch(e){}\"",
+    "test": "turbo run test",
+    "build": "turbo run build",
+    "docker:build": "mkdir -p .logs/docker-compose && docker compose build 2>&1 | tee .logs/docker-compose/build.log",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write .",
+    "up:all": "pnpm update --recursive"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.2",
+    "@types/yargs": "^17.0.33",
+    "chalk": "^5.4.1",
+    "consola": "^3.4.2",
+    "cpy": "^11.1.0",
+    "execa": "^9.5.2",
+    "is-ci": "^4.1.0",
+    "lint-staged": "^15.5.1",
+    "npm-run-all2": "^7.0.2",
+    "plop": "^4.0.1",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "simple-git-hooks": "^2.13.0",
+    "turbo": "^2.5.2",
+    "yaml": "^2.7.1",
+    "yargs": "^17.7.2"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  }
+}

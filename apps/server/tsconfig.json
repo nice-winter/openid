@@ -1,5 +1,5 @@
 {
-  "extends": "@template-turborepo-vue/tsconfig/library.json",
+  "extends": "@openid/tsconfig/library.json",
 
   "compilerOptions": {
     "baseUrl": ".",

@@ -1,7 +1,7 @@
 import Fastify from 'fastify'
 import fastifyMiddie from '@fastify/middie'
 import fastifyCors from '@fastify/cors'
-import { add } from '@template-turborepo-vue/math'
+import { add } from '@openid/math'
 import helloWorld from './modules/helloWorld'
 
 const app = Fastify({

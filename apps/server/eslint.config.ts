@@ -1,4 +1,4 @@
-import { eslintConfigTypescript } from '@template-turborepo-vue/eslint-config/typescript'
+import { eslintConfigTypescript } from '@openid/eslint-config/typescript'
 
 export default eslintConfigTypescript(
   // Add your custom rules here:

@@ -1,3 +1,24 @@
+diff --git a/dist/module.mjs b/dist/module.mjs
+index 48f33ac99f46ef94cd8d87ea62720b7a5bec63d5..6fab4848bf323a9ef1ba52b27fc49571c9bca9e9 100644
+--- a/dist/module.mjs
++++ b/dist/module.mjs
+@@ -105,15 +105,7 @@ const module = defineNuxtModule({
+     const theme$1 = theme || { env: "NUXT_UI_PRO_LICENSE", link: "https://ui.nuxt.com/pro" };
+     const key = process.env[theme$1.env] || nuxt.options.uiPro?.license;
+     if (nuxt.options.dev || nuxt.options._prepare || nuxt.options.test) {
+-      if (nuxt.options.dev && !key) {
+-        consola.box(
+-          colors.greenBright("Nuxt UI Pro") + `
+-
+-Missing \`${theme$1.env}\` env variable, please add it to your \`.env\`.
+-
+-` + colors.blueBright(`Purchase Nuxt UI Pro at ${theme$1.link} to build your app in production.`)
+-        );
+-      }
++      if (nuxt.options.dev && !key) {}
+       return;
+     }
+     nuxt.hook("build:before", async () => {
 diff --git a/dist/shared/ui-pro.CjN6508I.mjs b/dist/shared/ui-pro.CjN6508I.mjs
 index a74ca12592a31671a9d29ffcb45e722ce425cc8e..4bd2998294916c8ac967542c499591e4e15a5771 100644
 --- a/dist/shared/ui-pro.CjN6508I.mjs
@@ -38,3 +59,24 @@ index a74ca12592a31671a9d29ffcb45e722ce425cc8e..4bd2998294916c8ac967542c499591e4
  function _createError(message) {
    const error = new Error(message);
    try {
+diff --git a/dist/unplugin.mjs b/dist/unplugin.mjs
+index 5a62ca4e21d50c29dad2e4b116e1ac7c50f0f9af..9bfd04a9a780210267877a892303d888a8764e00 100644
+--- a/dist/unplugin.mjs
++++ b/dist/unplugin.mjs
+@@ -66,15 +66,7 @@ function LicensePlugin(license) {
+       enforce: "pre",
+       apply(config, { command }) {
+         if (command === "serve") {
+-          if (!key) {
+-            consola.box(
+-              colors.greenBright("Nuxt UI Pro") + `
+-
+-Missing \`${theme$1.env}\` env variable, please add it to your \`.env\`.
+-
+-` + colors.blueBright(`Purchase Nuxt UI Pro at ${theme$1.link} to build your app in production.`)
+-            );
+-          }
++          if (!key) {}
+         }
+         return command === "build";
+       }

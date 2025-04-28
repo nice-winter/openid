@@ -6,7 +6,7 @@ settings:
 
 patchedDependencies:
   '@nuxt/ui-pro':
-    hash: ad09c4bbbdab641dd756feab4dff3127fbe808ef458a60c14a5c5d53f1c3ce45
+    hash: e78dc8720cceaf1eeddb8e1dbafe531c85bb72971eb2337d6b5914b73f5f16f5
     path: patches/@nuxt__ui-pro.patch
   plop@4.0.1:
     hash: 63b3ec3f63d3abdd4a6fc44f55bc2a8702fa54110db0284e68f9b13911b4aca3
@@ -118,7 +118,7 @@ importers:
     dependencies:
       '@nuxt/ui-pro':
         specifier: ^3.1.0
-        version: 3.1.0(patch_hash=ad09c4bbbdab641dd756feab4dff3127fbe808ef458a60c14a5c5d53f1c3ce45)(@babel/parser@7.27.0)(axios@1.9.0)(embla-carousel@8.6.0)(typescript@5.8.3)(vite@6.3.3(@types/node@22.14.1)(jiti@2.4.2)(less@4.3.0)(lightningcss@1.29.2)(tsx@4.19.3)(yaml@2.7.1))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))(zod@3.24.3)
+        version: 3.1.0(patch_hash=e78dc8720cceaf1eeddb8e1dbafe531c85bb72971eb2337d6b5914b73f5f16f5)(@babel/parser@7.27.0)(axios@1.9.0)(embla-carousel@8.6.0)(typescript@5.8.3)(vite@6.3.3(@types/node@22.14.1)(jiti@2.4.2)(less@4.3.0)(lightningcss@1.29.2)(tsx@4.19.3)(yaml@2.7.1))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))(zod@3.24.3)
       '@openid/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -5122,7 +5122,7 @@ snapshots:
       pathe: 2.0.3
       std-env: 3.9.0
 
-  '@nuxt/ui-pro@3.1.0(patch_hash=ad09c4bbbdab641dd756feab4dff3127fbe808ef458a60c14a5c5d53f1c3ce45)(@babel/parser@7.27.0)(axios@1.9.0)(embla-carousel@8.6.0)(typescript@5.8.3)(vite@6.3.3(@types/node@22.14.1)(jiti@2.4.2)(less@4.3.0)(lightningcss@1.29.2)(tsx@4.19.3)(yaml@2.7.1))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))(zod@3.24.3)':
+  '@nuxt/ui-pro@3.1.0(patch_hash=e78dc8720cceaf1eeddb8e1dbafe531c85bb72971eb2337d6b5914b73f5f16f5)(@babel/parser@7.27.0)(axios@1.9.0)(embla-carousel@8.6.0)(typescript@5.8.3)(vite@6.3.3(@types/node@22.14.1)(jiti@2.4.2)(less@4.3.0)(lightningcss@1.29.2)(tsx@4.19.3)(yaml@2.7.1))(vue-router@4.5.1(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))(zod@3.24.3)':
     dependencies:
       '@ai-sdk/vue': 1.2.8(vue@3.5.13(typescript@5.8.3))(zod@3.24.3)
       '@nuxt/kit': 3.16.2

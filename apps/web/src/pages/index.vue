@@ -5,12 +5,11 @@ useHead({
 </script>
 
 <template>
-  <!-- <main>
-    <TheWelcome />
-  </main> -->
   <UPage>
-    <template #left />
+    <template #left> </template>
 
-    <template #right />
+    <TheWelcome />
+
+    <template #right> </template>
   </UPage>
 </template>

@@ -24,12 +24,12 @@ const items = computed<NavigationMenuItem[]>(() => [
 
 <template>
   <UApp>
-    <UHeader>
+    <UHeader class="z-auto">
       <template #title>
         <VLogo class="h-6 w-auto" />
       </template>
 
-      <UNavigationMenu :items="items" />
+      <UNavigationMenu class="gap-3" :items="items" />
 
       <template #right>
         <UColorModeButton />
@@ -47,7 +47,11 @@ const items = computed<NavigationMenuItem[]>(() => [
       </template>
     </UHeader>
 
-    <RouterView />
+    <UMain>
+      <RouterView />
+    </UMain>
+
+    <UFooter />
   </UApp>
 </template>
 

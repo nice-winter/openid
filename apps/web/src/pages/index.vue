@@ -5,7 +5,12 @@ useHead({
 </script>
 
 <template>
-  <main>
+  <!-- <main>
     <TheWelcome />
-  </main>
+  </main> -->
+  <UPage>
+    <template #left />
+
+    <template #right />
+  </UPage>
 </template>

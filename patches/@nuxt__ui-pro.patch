@@ -19,10 +19,10 @@ index 48f33ac99f46ef94cd8d87ea62720b7a5bec63d5..6fab4848bf323a9ef1ba52b27fc49571
        return;
      }
      nuxt.hook("build:before", async () => {
-diff --git a/dist/shared/ui-pro.CjN6508I.mjs b/dist/shared/ui-pro.CjN6508I.mjs
+diff --git a/dist/shared/ui-pro.BvhO-FJN.mjs b/dist/shared/ui-pro.BvhO-FJN.mjs
 index a74ca12592a31671a9d29ffcb45e722ce425cc8e..4bd2998294916c8ac967542c499591e4e15a5771 100644
---- a/dist/shared/ui-pro.CjN6508I.mjs
-+++ b/dist/shared/ui-pro.CjN6508I.mjs
+--- a/dist/shared/ui-pro.BvhO-FJN.mjs
++++ b/dist/shared/ui-pro.BvhO-FJN.mjs
 @@ -2285,34 +2285,7 @@ const icons = {
    warning: "i-lucide-triangle-alert"
  };

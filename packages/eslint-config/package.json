@@ -11,15 +11,15 @@
     }
   },
   "devDependencies": {
-    "@eslint/js": "^9.25.1",
+    "@eslint/js": "^9.26.0",
     "@openid/tsconfig": "workspace:*",
     "@types/node": "~22.14.1",
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.5.0",
     "eslint-config-prettier": "^10.1.2",
     "eslint-config-turbo": "^2.5.2",
-    "eslint-plugin-vue": "~10.0.0",
+    "eslint-plugin-vue": "~10.0.1",
     "typescript": "~5.8.3",
-    "typescript-eslint": "^8.31.0"
+    "typescript-eslint": "^8.31.1"
   }
 }
